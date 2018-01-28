@@ -26,4 +26,13 @@ public class EstacionTest {
         assertEquals(estacion.consultarEstacion(),"Id: 1, Direccion: Manacor, numero de anclajes: 6");
         
     }
+
+    @Test
+    public void anclajesTest() {
+
+        for (int i = 0; i < estacion.getAnclajes().length; i++) {
+            System.out.println(estacion.getAnclajes()[i]);
+        }
+        
+    }
 }

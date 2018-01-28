@@ -8,6 +8,7 @@ public class Estacion {
     private int Id = 0;
     private String direccion = null;
     private int numeroAnclajes = 0;
+    private Bicicleta[] anclajes 	 = null;
 
     public Estacion() {
                 
@@ -17,7 +18,7 @@ public class Estacion {
         this.Id = id;
         this.direccion = direccion;
         this.numeroAnclajes = numeroAnclajes;
-        
+        this.anclajes = new Bicicleta[numeroAnclajes];   
     }
     /**
      * @param direccion the direccion to set
@@ -41,6 +42,13 @@ public class Estacion {
     }
 
     /**
+     * @param anclajes the anclajes to set
+     */
+    public void setAnclajes(Bicicleta[] anclajes) {
+        this.anclajes = anclajes;
+    }
+
+    /**
      * @return the id
      */
     public int getId() {
@@ -59,6 +67,13 @@ public class Estacion {
      */
     public int getNumeroAnclajes() {
         return numeroAnclajes;
+    }
+
+    /**
+     * @return the anclajes
+     */
+    public Bicicleta[] getAnclajes() {
+        return anclajes;
     }
 
     public String consultarEstacion() {
