@@ -100,4 +100,9 @@ public class Estacion {
              }
         }
     }
+
+    public boolean leerTarjetaUsuario(TarjetaUsuario tarjetaUsuario) {
+        
+        return tarjetaUsuario.isActivada();
+    }
 }
