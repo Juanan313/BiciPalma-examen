@@ -5,8 +5,8 @@ package org.mvpigs.Bicipalma;
  */
 public class TarjetaUsuario {
 
-    int id = 0;
-    boolean activada = false;
+    private int id = 0;
+    private boolean activada = false;
 
     public TarjetaUsuario() {
 

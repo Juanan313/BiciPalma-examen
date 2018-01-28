@@ -5,7 +5,7 @@ package org.mvpigs.Bicipalma;
  */
 public class Bicicleta {
 
-    int id = 000;
+    private int id = 000;
 
     public Bicicleta() {
 

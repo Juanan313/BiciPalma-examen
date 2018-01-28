@@ -5,9 +5,9 @@ package org.mvpigs.Bicipalma;
  */
 public class Estacion {
 
-    int Id = 0;
-    String direccion = null;
-    int numeroAnclajes = 0;
+    private int Id = 0;
+    private String direccion = null;
+    private int numeroAnclajes = 0;
 
     public Estacion() {
                 
