@@ -81,4 +81,23 @@ public class Estacion {
         return "Id: "+getId()+", Direccion: "+getDireccion()+", numero de anclajes: "+getNumeroAnclajes();
         
     }
+
+    public void mostrarAnclaje(Bicicleta bicicleta, int numeroAnclaje) {
+
+        // Muestra por consola el Id de la bicicleta y el anclaje en el que está
+        System.out.println("Id bicicleta: "+bicicleta.getId()+", Numero de Anclaje: "+numeroAnclaje); 
+        
+    }
+
+    public void anclarBicicleta(Bicicleta bicicleta) {
+
+        for (int i=0 ; i < anclajes.length; i++) {
+             if (anclajes[i] == null) {
+                 this.anclajes[i] = bicicleta;
+                 mostrarAnclaje(bicicleta, i);
+                 break;
+
+             }
+        }
+    }
 }

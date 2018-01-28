@@ -35,4 +35,16 @@ public class EstacionTest {
         }
         
     }
+
+     @Test
+    public void anclarBicicletaTest() {
+
+        Bicicleta bicicleta = new Bicicleta(201);
+
+        estacion.anclarBicicleta(bicicleta);
+
+        Bicicleta bicicleta2 = new Bicicleta(202);
+
+        estacion.anclarBicicleta(bicicleta2);
+    }
 }
