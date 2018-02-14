@@ -5,19 +5,19 @@ package org.mvpigs.Bicipalma;
  */
 public class TarjetaUsuario {
 
-    private int id = 0;
+    private String id = "";
     private boolean activada = false;
 
     public TarjetaUsuario() {
 
     }
 
-    public TarjetaUsuario(int id) {
+    public TarjetaUsuario(String id) {
         this.id = id;
 
     }
 
-    public TarjetaUsuario(int id, boolean activada) {
+    public TarjetaUsuario(String id, boolean activada) {
         this.id = id;
         this.activada = activada;
 
@@ -26,7 +26,7 @@ public class TarjetaUsuario {
     /**
      * @return the id
      */
-    public int getId() {
+    public String getId() {
         return id;
     }
 
@@ -40,7 +40,7 @@ public class TarjetaUsuario {
     /**
      * @param id the id to set
      */
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 

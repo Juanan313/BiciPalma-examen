@@ -1,6 +1,5 @@
 package org.mvpigs.Bicipalma;
 
-import org.mvpigs.Bicipalma.*;
 
 public class BiciPalma {
 

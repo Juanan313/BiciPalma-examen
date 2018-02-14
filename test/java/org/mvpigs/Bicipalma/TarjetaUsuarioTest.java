@@ -10,8 +10,8 @@ import org.junit.Test;
 public class TarjetaUsuarioTest {
 
     TarjetaUsuario tarjetaUsuario = new TarjetaUsuario();
-    TarjetaUsuario tarjetaUsuario2 = new TarjetaUsuario(5);
-    TarjetaUsuario tarjetaUsuario3 = new TarjetaUsuario(6, true);
+    TarjetaUsuario tarjetaUsuario2 = new TarjetaUsuario("1245678");
+    TarjetaUsuario tarjetaUsuario3 = new TarjetaUsuario("622530103", true);
 
     @Test
     public void constructorTest() {
@@ -23,9 +23,9 @@ public class TarjetaUsuarioTest {
 
         // Comprueba que la variable id se instancia correctamente
 
-        assertEquals(tarjetaUsuario.getId(), 0);
-        assertEquals(tarjetaUsuario2.getId(),5);
-        assertEquals(tarjetaUsuario3.getId(),6);
+        assertEquals(tarjetaUsuario.getId(), "");
+        assertEquals(tarjetaUsuario2.getId(),"1245678");
+        assertEquals(tarjetaUsuario3.getId(),"622530103");
         
     }
     
